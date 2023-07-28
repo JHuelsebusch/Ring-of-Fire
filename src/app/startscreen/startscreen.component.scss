@@ -4,9 +4,20 @@
     height: 100vh;
     background-image: url('./../../assets/img/bg.png');
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     .startscreenImg {
         max-height: 80%;
+    }
+    .startbutton {
+        max-height: 100px;
+        position: absolute;
+        bottom: 100px;
+        &:hover {
+            cursor: pointer;
+            filter: brightness(1.2);
+        }
     }
 }
